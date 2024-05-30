@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: personDetailsList.isEmpty
           ? const Center(
-              child: Text("Person Details Empty"),
+              child: Icon(Icons.error_outline_outlined, size: 50, color: Colors.red,),
             )
           : ListView.separated(
               itemCount: personDetailsList.length,
